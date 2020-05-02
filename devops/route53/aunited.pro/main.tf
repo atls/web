@@ -2,7 +2,7 @@ resource "aws_route53_zone" "main" {
   name          = "aunited.pro"
   force_destroy = true
 
-  tags {
+  tags = {
     Name        = "aunited.pro-zone-public"
     Infra       = "aunited.pro"
     Terraformed = "true"
