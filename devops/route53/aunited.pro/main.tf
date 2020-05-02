@@ -9,82 +9,114 @@ resource "aws_route53_zone" "main" {
   }
 }
 
+resource "aws_route53_record" "al_github_verify" {
+  name    = "_github-challenge-atlantisunited.aunited.pro."
+  type    = "TXT"
+  zone_id = aws_route53_zone.main.id
+  records = ["4fa99e227b"]
+  ttl     = 3600
+}
+
+resource "aws_route53_record" "al_google_verify" {
+  name    = "aunited.pro"
+  type    = "TXT"
+  zone_id = aws_route53_zone.main.id
+  records = ["google-site-verification=apWyVxRdzZSxqbYTYvP2ufglMkcyMCTXtO8fSfkhyF8"]
+  ttl     = 3600
+}
+
+resource "aws_route53_record" "al_yandex_verify" {
+  name    = "aunited.pro"
+  type    = "TXT"
+  zone_id = aws_route53_zone.main.id
+  records = ["yandex-verification: e24e1942cc9c6468"]
+  ttl     = 3600
+}
+
+resource "aws_route53_record" "al_yandex_mail" {
+  name    = "aunited.pro"
+  type    = "MX"
+  zone_id = aws_route53_zone.main.id
+  records = ["10 mx.yandex.net"]
+  ttl     = 1800
+}
+
 resource "aws_route53_record" "av_local_root" {
-  zone_id = "${aws_route53_zone.main.id}"
+  zone_id = aws_route53_zone.main.id
 
-  name = "av.local.aunited.pro"
-  type = "A"
+  name    = "av.local.aunited.pro"
+  type    = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["127.0.0.1"]
 }
 
 resource "aws_route53_record" "av_local_wildcard" {
-  zone_id = "${aws_route53_zone.main.id}"
+  zone_id = aws_route53_zone.main.id
 
-  name = "*.av.local.aunited.pro"
-  type = "A"
+  name    = "*.av.local.aunited.pro"
+  type    = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["127.0.0.1"]
 }
 
 resource "aws_route53_record" "bs_local_root" {
-  zone_id = "${aws_route53_zone.main.id}"
+  zone_id = aws_route53_zone.main.id
 
-  name = "bs.local.aunited.pro"
-  type = "A"
+  name    = "bs.local.aunited.pro"
+  type    = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["127.0.0.1"]
 }
 
 resource "aws_route53_record" "bs_local_wildcard" {
-  zone_id = "${aws_route53_zone.main.id}"
+  zone_id = aws_route53_zone.main.id
 
-  name = "*.bs.local.aunited.pro"
-  type = "A"
+  name    = "*.bs.local.aunited.pro"
+  type    = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["127.0.0.1"]
 }
 
 resource "aws_route53_record" "au_wp_root" {
-  zone_id = "${aws_route53_zone.main.id}"
+  zone_id = aws_route53_zone.main.id
 
-  name = "stage.aunited.pro"
-  type = "A"
+  name    = "stage.aunited.pro"
+  type    = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["54.237.238.140"]
 }
 
 resource "aws_route53_record" "au_wp_wildcard" {
-  zone_id = "${aws_route53_zone.main.id}"
+  zone_id = aws_route53_zone.main.id
 
-  name = "*.stage.aunited.pro"
-  type = "A"
+  name    = "*.stage.aunited.pro"
+  type    = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["54.237.238.140"]
 }
 
 resource "aws_route53_record" "examine_docs" {
-  zone_id = "${aws_route53_zone.main.id}"
+  zone_id = aws_route53_zone.main.id
 
-  name = "docs.examine.aunited.pro"
-  type = "A"
+  name    = "docs.examine.aunited.pro"
+  type    = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["54.85.121.172"]
 }
 
 resource "aws_route53_record" "examine_gateway" {
-  zone_id = "${aws_route53_zone.main.id}"
+  zone_id = aws_route53_zone.main.id
 
-  name = "gateway.examine.aunited.pro"
-  type = "A"
+  name    = "gateway.examine.aunited.pro"
+  type    = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["54.85.121.172"]
 }

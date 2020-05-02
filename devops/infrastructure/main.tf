@@ -18,29 +18,29 @@ module "vpc" {
 
 resource "aws_iam_role" "ecs_host_role" {
   name               = "aunited_ecs_host_role"
-  assume_role_policy = "${file("./policies/ecs-role.json")}"
+  assume_role_policy = file("./policies/ecs-role.json")
 }
 
 resource "aws_iam_role_policy" "ecs_instance_role_policy" {
   name   = "aunited_ecs_instance_role_policy"
-  policy = "${file("./policies/ecs-instance-role-policy.json")}"
-  role   = "${aws_iam_role.ecs_host_role.id}"
+  policy = file("./policies/ecs-instance-role-policy.json")
+  role   = aws_iam_role.ecs_host_role.id
 }
 
 resource "aws_iam_role" "ecs_service_role" {
   name               = "aunited_ecs_service_role"
-  assume_role_policy = "${file("./policies/ecs-role.json")}"
+  assume_role_policy = file("./policies/ecs-role.json")
 }
 
 resource "aws_iam_role_policy" "ecs_service_role_policy" {
   name   = "aunited_ecs_service_role_policy"
-  policy = "${file("./policies/ecs-service-role-policy.json")}"
-  role   = "${aws_iam_role.ecs_service_role.id}"
+  policy = file("./policies/ecs-service-role-policy.json")
+  role   = aws_iam_role.ecs_service_role.id
 }
 
 resource "aws_iam_instance_profile" "ecs" {
   name = "aunited_ecs_instance_profile"
-  role = "${aws_iam_role.ecs_host_role.name}"
+  role = aws_iam_role.ecs_host_role.name
   path = "/"
 
   provisioner "local-exec" {
@@ -58,5 +58,5 @@ resource "aws_cloudwatch_log_group" "system" {
 
 resource "aws_key_pair" "ecs" {
   key_name   = "ecs-key"
-  public_key = "${file("./keys/aunited-ecs.pub")}"
+  public_key = file("./keys/aunited-ecs.pub")
 }
