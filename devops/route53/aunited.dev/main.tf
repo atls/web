@@ -10,61 +10,61 @@ resource "aws_route53_zone" "dev" {
 }
 
 resource "aws_route53_record" "av_local_root" {
-  zone_id = "${aws_route53_zone.dev.id}"
+  zone_id = aws_route53_zone.dev.id
 
   name = "av.local.aunited.dev"
   type = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["127.0.0.1"]
 }
 
 resource "aws_route53_record" "av_local_wildcard" {
-  zone_id = "${aws_route53_zone.dev.id}"
+  zone_id = aws_route53_zone.dev.id
 
   name = "*.av.local.aunited.dev"
   type = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["127.0.0.1"]
 }
 
 resource "aws_route53_record" "bs_local_root" {
-  zone_id = "${aws_route53_zone.dev.id}"
+  zone_id = aws_route53_zone.dev.id
 
   name = "bs.local.aunited.dev"
   type = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["127.0.0.1"]
 }
 
 resource "aws_route53_record" "bs_local_wildcard" {
-  zone_id = "${aws_route53_zone.dev.id}"
+  zone_id = aws_route53_zone.dev.id
 
   name = "*.bs.local.aunited.dev"
   type = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["127.0.0.1"]
 }
 
 resource "aws_route53_record" "sy_local_root" {
-  zone_id = "${aws_route53_zone.dev.id}"
+  zone_id = aws_route53_zone.dev.id
 
   name = "sy.local.aunited.dev"
   type = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["127.0.0.1"]
 }
 
 resource "aws_route53_record" "sy_local_wildcard" {
-  zone_id = "${aws_route53_zone.dev.id}"
+  zone_id = aws_route53_zone.dev.id
 
   name = "*.sy.local.aunited.dev"
   type = "A"
 
-  ttl     = "300"
+  ttl     = 300
   records = ["127.0.0.1"]
 }
