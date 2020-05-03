@@ -39,7 +39,7 @@ resource "aws_route53_record" "al_yandex_mail" {
 resource "aws_route53_record" "au_wp_root" {
   zone_id = aws_route53_zone.main.id
 
-  name    = "stage.aunited.pro"
+  name    = "aunited.pro"
   type    = "A"
 
   ttl     = 300
@@ -49,7 +49,7 @@ resource "aws_route53_record" "au_wp_root" {
 resource "aws_route53_record" "au_wp_wildcard" {
   zone_id = aws_route53_zone.main.id
 
-  name    = "*.stage.aunited.pro"
+  name    = "*.aunited.pro"
   type    = "A"
 
   ttl     = 300
