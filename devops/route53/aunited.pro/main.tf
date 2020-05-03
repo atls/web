@@ -36,50 +36,10 @@ resource "aws_route53_record" "al_yandex_mail" {
   ttl     = 1800
 }
 
-resource "aws_route53_record" "av_local_root" {
-  zone_id = aws_route53_zone.main.id
-
-  name    = "av.local.aunited.pro"
-  type    = "A"
-
-  ttl     = 300
-  records = ["127.0.0.1"]
-}
-
-resource "aws_route53_record" "av_local_wildcard" {
-  zone_id = aws_route53_zone.main.id
-
-  name    = "*.av.local.aunited.pro"
-  type    = "A"
-
-  ttl     = 300
-  records = ["127.0.0.1"]
-}
-
-resource "aws_route53_record" "bs_local_root" {
-  zone_id = aws_route53_zone.main.id
-
-  name    = "bs.local.aunited.pro"
-  type    = "A"
-
-  ttl     = 300
-  records = ["127.0.0.1"]
-}
-
-resource "aws_route53_record" "bs_local_wildcard" {
-  zone_id = aws_route53_zone.main.id
-
-  name    = "*.bs.local.aunited.pro"
-  type    = "A"
-
-  ttl     = 300
-  records = ["127.0.0.1"]
-}
-
 resource "aws_route53_record" "au_wp_root" {
   zone_id = aws_route53_zone.main.id
 
-  name    = "stage.aunited.pro"
+  name    = "aunited.pro"
   type    = "A"
 
   ttl     = 300
@@ -89,7 +49,7 @@ resource "aws_route53_record" "au_wp_root" {
 resource "aws_route53_record" "au_wp_wildcard" {
   zone_id = aws_route53_zone.main.id
 
-  name    = "*.stage.aunited.pro"
+  name    = "*.aunited.pro"
   type    = "A"
 
   ttl     = 300
