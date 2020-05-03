@@ -55,3 +55,7 @@ dist
 
 # Google Cloud Credentials
 credentials.json
+
+# Terraform
+*.tfstate
+.terraform
