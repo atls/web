@@ -17,19 +17,14 @@ resource "aws_route53_record" "al_github_verify" {
   ttl     = 3600
 }
 
-resource "aws_route53_record" "al_google_verify" {
+resource "aws_route53_record" "al_txt_records" {
   name    = "aunited.pro"
   type    = "TXT"
   zone_id = aws_route53_zone.main.id
-  records = ["google-site-verification=apWyVxRdzZSxqbYTYvP2ufglMkcyMCTXtO8fSfkhyF8"]
-  ttl     = 3600
-}
-
-resource "aws_route53_record" "al_yandex_verify" {
-  name    = "aunited.pro"
-  type    = "TXT"
-  zone_id = aws_route53_zone.main.id
-  records = ["yandex-verification: e24e1942cc9c6468"]
+  records = [
+    "google-site-verification=apWyVxRdzZSxqbYTYvP2ufglMkcyMCTXtO8fSfkhyF8",
+    "yandex-verification: e24e1942cc9c6468"
+  ]
   ttl     = 3600
 }
 
