@@ -1,6 +1,6 @@
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "~> 1.0"
+  version = "~> 2.0"
 
   name = "aunited-vpc"
 
