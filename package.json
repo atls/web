@@ -13,8 +13,8 @@
   "devDependencies": {
     "@commitlint/config-conventional": "8.3.4",
     "@lerna/project": "3.21.0",
-    "commitizen": "4.0.5",
-    "cz-conventional-changelog": "3.1.0",
+    "commitizen": "4.1.2",
+    "cz-conventional-changelog": "3.2.0",
     "cz-lerna-changelog": "2.0.3"
   },
   "config": {
