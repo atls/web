@@ -67,7 +67,7 @@ data "aws_ami" "amazon_linux" {
 
 module "ecs_persisted_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 1.0"
+  version = "~> 2.0"
 
   name           = "ecs-persisted"
   instance_count = 1
