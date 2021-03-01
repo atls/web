@@ -11,7 +11,7 @@
     "commit": "git-cz"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "12.0.0",
+    "@commitlint/config-conventional": "12.0.1",
     "@lerna/project": "4.0.0",
     "commitizen": "4.2.3",
     "cz-conventional-changelog": "3.3.0",
