@@ -1,223 +1,70 @@
 @font-face {
-    font-family: 'GT Walsheim Pro';
-    src: url('../fonts/GTWalsheimPro-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro';
-    src: url('../fonts/GTWalsheimPro-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro';
-    src: url('../fonts/GTWalsheimPro-ThinOblique.woff2') format('woff2');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro';
-    src: url('../fonts/GTWalsheimPro-Thin.woff2') format('woff2');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro';
-    src: url('../fonts/GTWalsheimPro-BoldOblique.woff2') format('woff2');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro Ultra';
-    src: url('../fonts/GTWalsheimPro-UltraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro Ultra';
-    src: url('../fonts/GTWalsheimPro-UltraBoldOblique.woff2') format('woff2');
+    font-family: 'Magistral Extra';
+    src: url('../fonts/Magistral-ExtraBoldItalic.woff2') format('woff2');
     font-weight: 800;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'GT Walsheim Pro';
-    src: url('../fonts/GTWalsheimPro-MediumOblique.woff2') format('woff2');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro';
-    src: url('../fonts/GTWalsheimPro-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro';
-    src: url('../fonts/GTWalsheimPro-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro';
-    src: url('../fonts/GTWalsheimPro-RegularOblique.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro';
-    src: url('../fonts/GTWalsheimPro-LightOblique.woff2') format('woff2');
+    font-family: 'Magistral';
+    src: url('../fonts/Magistral-LightItalic.woff2') format('woff2');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'GT Walsheim Pro Ultra';
-    src: url('../fonts/GTWalsheimPro-UltraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro Ultra';
-    src: url('../fonts/GTWalsheimPro-UltraLightOblique.woff2') format('woff2');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro';
-    src: url('../fonts/GTWalsheimPro-BlackOblique.woff2') format('woff2');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro';
-    src: url('../fonts/GTWalsheimPro-Black.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro Cond Ultra';
-    src: url('../fonts/GTWalsheimPro-CondensedUltraBold.woff2') format('woff2');
+    font-family: 'Magistral Extra';
+    src: url('../fonts/Magistral-ExtraBold.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'GT Walsheim Pro Condensed';
-    src: url('../fonts/GTWalsheimPro-CondensedLight.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro Condensed';
-    src: url('../fonts/GTWalsheimPro-CondensedBoldOblique.woff2') format('woff2');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro Condensed';
-    src: url('../fonts/GTWalsheimPro-CondensedLightOblique.woff2') format('woff2');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro Condensed';
-    src: url('../fonts/GTWalsheimPro-CondensedThin.woff2') format('woff2');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GTWalsheimPro-CondensedULightIt';
-    src: url('../fonts/GTWalsheimPro-CondensedUltraLightOblique.woff2') format('woff2');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro Cond';
-    src: url('../fonts/GTWalsheimPro-CondensedMedium.woff2') format('woff2');
+    font-family: 'Magistral';
+    src: url('../fonts/Magistral-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'GT Walsheim Pro Condensed';
-    src: url('../fonts/GTWalsheimPro-CondensedBlackOblique.woff2') format('woff2');
-    font-weight: 900;
+    font-family: 'Magistral Book';
+    src: url('../fonts/Magistral-BookItalic.woff2') format('woff2');
+    font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'GT Walsheim Pro Condensed';
-    src: url('../fonts/GTWalsheimPro-CondensedRegular.woff2') format('woff2');
+    font-family: 'Magistral Book';
+    src: url('../fonts/Magistral-Book.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'GT Walsheim Pro Condensed';
-    src: url('../fonts/GTWalsheimPro-CondensedThinOblique.woff2') format('woff2');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro Condensed';
-    src: url('../fonts/GTWalsheimPro-CondensedBold.woff2') format('woff2');
+    font-family: 'Magistral';
+    src: url('../fonts/Magistral-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'GT Walsheim Pro Condensed';
-    src: url('../fonts/GTWalsheimPro-CondensedRegularOblique.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GTWalsheimPro-CondensedULight';
-    src: url('../fonts/GTWalsheimPro-CondensedUltraLight.woff2') format('woff2');
-    font-weight: 200;
+    font-family: 'Magistral';
+    src: url('../fonts/Magistral-Light.woff2') format('woff2');
+    font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'GT Walsheim Pro Cond Ultra';
-    src: url('../fonts/GTWalsheimPro-CondensedUltraBoldOblique.woff2') format('woff2');
-    font-weight: 800;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GT Walsheim Pro Cond';
-    src: url('../fonts/GTWalsheimPro-CondensedMediumOblique.woff2') format('woff2');
+    font-family: 'Magistral';
+    src: url('../fonts/Magistral-MediumItalic.woff2') format('woff2');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'GT Walsheim Pro Condensed';
-    src: url('../fonts/GTWalsheimPro-CondensedBlack.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
+    font-family: 'Magistral';
+    src: url('../fonts/Magistral-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
 }
+
