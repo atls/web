@@ -1,2 +1,3 @@
-# debugmail-site
-Public site for DM2
+# Atlantis Team
+
+Public site for Atlantis Team
